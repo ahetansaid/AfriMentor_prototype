@@ -1,0 +1,116 @@
+@import "tailwindcss";
+
+/* =========================================================
+   AfriMentor — design system (porté du prototype v2)
+   Direction : éditorial-patrimonial panafricain
+   ========================================================= */
+@theme {
+  --color-ivory: #faf6ee;
+  --color-ivory-soft: #f5efe2;
+  --color-ivory-shadow: #e8dfcb;
+  --color-indigo: #1a2f4e;
+  --color-indigo-deep: #0f1b2f;
+  --color-gold: #c9a227;
+  --color-gold-soft: #e5c654;
+  --color-terra: #8b3a1f;
+  --color-terra-soft: #b8513a;
+  --color-ink: #1f1f1f;
+  --color-ink-soft: #4a4a4a;
+  --color-muted: #6b6b6b;
+  --color-line: #d8cfb8;
+  --color-ok: #2f6b3c;
+  --color-err: #b23b2e;
+
+  --font-display: var(--font-fraunces), Georgia, serif;
+  --font-body: var(--font-inter-tight), -apple-system, sans-serif;
+}
+
+:root {
+  color-scheme: light;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-ivory);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  /* grain subtil */
+  background-image: radial-gradient(
+    circle at 1px 1px,
+    rgba(0, 0, 0, 0.025) 1px,
+    transparent 0
+  );
+  background-size: 4px 4px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-display);
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+}
+
+::selection {
+  background: var(--color-gold-soft);
+  color: var(--color-indigo-deep);
+}
+
+/* focus visible cohérent (accessibilité) */
+:focus-visible {
+  outline: 2px solid var(--color-indigo);
+  outline-offset: 2px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes toastIn {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.35s ease;
+}
+
+/* Lettrine sur le premier paragraphe d'un article */
+.article-prose p:first-of-type::first-letter {
+  font-family: var(--font-display);
+  font-size: 64px;
+  line-height: 0.8;
+  float: left;
+  margin: 8px 12px 0 0;
+  color: var(--color-terra);
+  font-weight: 500;
+}
