@@ -321,9 +321,6 @@ export default async function HomePage() {
                   Explorer l&apos;annuaire
                 </Link>
               </div>
-              <div className="mt-12 text-[13px] uppercase tracking-[0.08em] text-gold">
-                — Porto-Novo · Avril 2026
-              </div>
             </div>
           </Reveal>
         </Container>
