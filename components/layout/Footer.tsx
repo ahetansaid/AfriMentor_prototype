@@ -39,8 +39,6 @@ export function Footer() {
               Contact
             </h4>
             <p className="text-[13px] leading-loose text-ink-soft">
-              Drwintech SaaS Solutions
-              <br />
               Porto-Novo, Bénin
               <br />
               contact@afrimentor.bj
@@ -49,7 +47,7 @@ export function Footer() {
         </div>
 
         <div className="mt-12 flex flex-col gap-2 border-t border-line pt-6 text-xs text-muted sm:flex-row sm:justify-between">
-          <span>© 2026 AfriMentor · Drwintech SaaS Solutions</span>
+          <span>© 2026 AfriMentor</span>
           <span>Prototype interactif · Tous droits réservés</span>
         </div>
       </div>

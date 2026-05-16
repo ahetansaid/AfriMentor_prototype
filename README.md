@@ -138,4 +138,4 @@ variables d'environnement.
 
 ---
 
-Projet privé — Drwintech SaaS Solutions, Porto-Novo, Bénin.
+Projet privé — Porto-Novo, Bénin.

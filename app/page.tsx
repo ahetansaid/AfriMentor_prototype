@@ -322,7 +322,7 @@ export default async function HomePage() {
                 </Link>
               </div>
               <div className="mt-12 text-[13px] uppercase tracking-[0.08em] text-gold">
-                — Drwintech SaaS Solutions, Porto-Novo · Avril 2026
+                — Porto-Novo · Avril 2026
               </div>
             </div>
           </Reveal>
