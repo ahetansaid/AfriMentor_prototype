@@ -271,7 +271,8 @@ export const PIONEERS: Pioneer[] = [
     availability: "Conseil ponctuel",
     views: 1120,
     completion: 55,
-    photoUrl: null,
+    photoUrl:
+      "https://images.unsplash.com/photo-1678225894316-b6e83cd06242?q=80&w=800&auto=format&fit=crop",
     tags: ["Ingénierie", "Architecture", "Plateau"],
     timeline: [
       { period: "1984 — 2002", role: "Architecte, Direction des bâtiments publics", org: "Ministère de l'Urbanisme" },
@@ -300,7 +301,8 @@ export const PIONEERS: Pioneer[] = [
     availability: "Mentorat ouvert",
     views: 1640,
     completion: 60,
-    photoUrl: null,
+    photoUrl:
+      "https://images.unsplash.com/flagged/photo-1555497742-77cf45746c7f?q=80&w=800&auto=format&fit=crop",
     tags: ["Finance", "Banque", "Littoral"],
     timeline: [
       { period: "1988 — 2005", role: "Analyste puis directrice du crédit", org: "Réseau bancaire UEMOA" },
@@ -331,7 +333,8 @@ export const PIONEERS: Pioneer[] = [
     availability: "Conseil ponctuel",
     views: 1290,
     completion: 45,
-    photoUrl: null,
+    photoUrl:
+      "https://images.unsplash.com/photo-1657356217673-4f7000f768b4?q=80&w=800&auto=format&fit=crop",
     tags: ["Agriculture", "Entrepreneuriat", "Zou"],
     timeline: [
       { period: "1992 — 2010", role: "Fondatrice, coopérative de transformation du soja", org: "Bohicon · 12 puis 300 productrices" },
@@ -420,7 +423,8 @@ export const PIONEERS: Pioneer[] = [
     availability: "Conseil ponctuel",
     views: 1056,
     completion: 55,
-    photoUrl: null,
+    photoUrl:
+      "https://plus.unsplash.com/premium_photo-1693146325979-027c2b00835c?q=80&w=800&auto=format&fit=crop",
     tags: ["Santé", "Chirurgie", "Donga"],
     timeline: [
       { period: "1992 — 2010", role: "Chirurgien de district, Hôpital de Djougou", org: "Ministère de la Santé" },
