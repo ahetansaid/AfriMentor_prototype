@@ -330,8 +330,7 @@ export const PIONEERS: Pioneer[] = [
     availability: "Conseil ponctuel",
     views: 1290,
     completion: 45,
-    photoUrl:
-      "https://images.unsplash.com/photo-1657356217673-4f7000f768b4?q=80&w=800&auto=format&fit=crop",
+    photoUrl: null,
     tags: ["Agriculture", "Entrepreneuriat", "Zou"],
     timeline: [
       { period: "1992 — 2010", role: "Fondatrice, coopérative de transformation du soja", org: "Bohicon · 12 puis 300 productrices" },
