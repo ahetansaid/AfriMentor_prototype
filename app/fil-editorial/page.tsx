@@ -59,7 +59,7 @@ export default async function EditorialPage() {
         {main && mainAuthor && (
           <Reveal>
             <article className="group mb-16 grid items-stretch overflow-hidden border border-line bg-white lg:grid-cols-[1.1fr_1fr]">
-              <div className="order-2 p-7 sm:p-10 lg:order-1 lg:p-12">
+              <div className="order-2 p-5 sm:p-10 lg:order-1 lg:p-12">
                 <div className="mb-4 text-[11px] font-semibold uppercase tracking-[0.15em] text-terra">
                   Article du mois · {main.sector}
                 </div>
@@ -103,7 +103,7 @@ export default async function EditorialPage() {
                   Lire l&apos;article →
                 </Link>
               </div>
-              <div className="order-1 relative h-72 overflow-hidden bg-ivory-soft lg:order-2 lg:h-auto">
+              <div className="order-1 relative h-56 overflow-hidden bg-ivory-soft sm:h-72 lg:order-2 lg:h-auto">
                 <div className="absolute inset-0 transition-transform duration-[1200ms] ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-105">
                   <Portrait
                     seed={mainAuthor.id}
@@ -124,7 +124,7 @@ export default async function EditorialPage() {
         )}
 
         {/* Grille */}
-        <Stagger className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
+        <Stagger className="grid gap-6 sm:grid-cols-2 sm:gap-10 lg:grid-cols-3">
           {rest.map((a, i) => (
             <StaggerItem key={a.id}>
               <ArticleCard article={a} author={restAuthors[i] ?? undefined} />

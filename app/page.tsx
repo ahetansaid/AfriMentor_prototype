@@ -231,7 +231,7 @@ export default async function HomePage() {
                 écrivent.
               </h2>
             </Reveal>
-            <div className="grid gap-14 lg:grid-cols-[1.4fr_1fr] lg:gap-20">
+            <div className="grid gap-10 lg:grid-cols-[1.4fr_1fr] lg:gap-20">
               <Reveal delay={0.1}>
                 <div className="mb-4 text-[11px] font-semibold uppercase tracking-[0.12em] text-terra">
                   {mainArticle.kind} — {mainArticle.sector}

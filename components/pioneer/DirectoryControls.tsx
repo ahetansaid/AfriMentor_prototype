@@ -42,19 +42,19 @@ export function DirectoryControls({ sector, search, sort }: Props) {
           e.preventDefault();
           navigate({ search: searchInput });
         }}
-        className="mb-6 flex max-w-2xl border-[1.5px] border-indigo bg-white"
+        className="mb-6 flex max-w-2xl flex-col border-[1.5px] border-indigo bg-white sm:flex-row"
       >
         <input
           type="text"
           value={searchInput}
           onChange={(e) => setSearchInput(e.target.value)}
-          placeholder="Rechercher : santé publique, hydraulique, Ouémé, magistrate…"
+          placeholder="Rechercher : santé publique, hydraulique, Ouémé…"
           aria-label="Rechercher un pionnier"
-          className="min-w-0 flex-1 bg-transparent px-5 py-3.5 text-[15px] outline-none placeholder:italic placeholder:text-muted"
+          className="min-w-0 flex-1 bg-transparent px-4 py-3 text-[15px] outline-none placeholder:italic placeholder:text-muted sm:px-5 sm:py-3.5"
         />
         <button
           type="submit"
-          className="shrink-0 bg-indigo px-6 py-3.5 text-sm font-medium tracking-wide text-ivory transition-colors hover:bg-indigo-deep"
+          className="shrink-0 border-t border-indigo bg-indigo px-6 py-3 text-sm font-medium tracking-wide text-ivory transition-colors hover:bg-indigo-deep sm:border-t-0 sm:py-3.5"
         >
           Rechercher
         </button>

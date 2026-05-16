@@ -24,9 +24,9 @@ export default async function InscriptionPage() {
   if (user) redirect("/tableau-de-bord");
 
   return (
-    <div className="grid min-h-[calc(100vh-73px)] lg:grid-cols-2">
+    <div className="grid min-h-[calc(100vh-73px)] grid-cols-1 lg:grid-cols-2">
       {/* Volet gauche */}
-      <div className="relative flex flex-col justify-between overflow-hidden bg-indigo p-12 text-ivory lg:p-16">
+      <div className="relative flex flex-col justify-between overflow-hidden bg-indigo p-6 text-ivory sm:p-10 lg:p-16">
         <div
           className="pointer-events-none absolute inset-0"
           style={{
@@ -59,7 +59,7 @@ export default async function InscriptionPage() {
       </div>
 
       {/* Volet droit — formulaire */}
-      <Container className="flex items-center py-14">
+      <Container className="flex items-center py-10 sm:py-14">
         <InscriptionForm supabaseMode={isSupabaseConfigured} />
       </Container>
     </div>

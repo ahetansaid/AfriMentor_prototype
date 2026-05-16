@@ -70,7 +70,7 @@ export function InscriptionForm({
         </p>
       )}
 
-      <div className="mt-7 grid grid-cols-2 gap-4">
+      <div className="mt-7 grid grid-cols-1 gap-4 sm:grid-cols-2">
         <Field
           name="prenom"
           label="Prénom"
@@ -91,7 +91,7 @@ export function InscriptionForm({
         placeholder="votre.adresse@email.com"
         error={errors.email}
       />
-      <div className="grid grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
         <Field
           name="annee"
           label="Année de naissance"

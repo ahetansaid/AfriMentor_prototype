@@ -74,7 +74,7 @@ export default async function PioneerProfilePage({
   return (
     <>
       {/* ---------- HERO IMMERSIF ---------- */}
-      <section className="relative min-h-[640px] overflow-hidden bg-indigo-deep text-ivory lg:min-h-[720px]">
+      <section className="relative min-h-[460px] overflow-hidden bg-indigo-deep text-ivory sm:min-h-[640px] lg:min-h-[720px]">
         {/* Fond — photo (couleurs originales) ou pattern */}
         {hasPhoto ? (
           <div className="absolute inset-0">
@@ -128,7 +128,7 @@ export default async function PioneerProfilePage({
           </Reveal>
 
           <Reveal delay={0.15}>
-            <div className="mt-10 grid grid-cols-2 gap-x-8 gap-y-5 border-t border-ivory/15 pt-7 sm:flex sm:flex-wrap sm:gap-x-12">
+            <div className="mt-10 flex flex-col gap-y-4 border-t border-ivory/15 pt-7 sm:flex-row sm:flex-wrap sm:gap-x-12 sm:gap-y-5">
               <Attr label="Région" value={`${pioneer.region}, Bénin`} />
               <Attr label="Expérience" value={`${pioneer.experience} ans`} />
               <Attr label="Statut" value={pioneer.status} />
@@ -285,21 +285,23 @@ export default async function PioneerProfilePage({
                     {pioneer.works.map((w, i) => (
                       <div
                         key={i}
-                        className="group grid grid-cols-[70px_1fr_auto] items-center gap-5 border-b border-line py-5 transition-colors hover:bg-ivory-soft sm:grid-cols-[100px_1fr_auto]"
+                        className="group flex flex-col gap-2 border-b border-line py-5 transition-colors hover:bg-ivory-soft sm:grid sm:grid-cols-[100px_1fr_auto] sm:items-center sm:gap-5"
                       >
-                        <div className="font-display text-2xl text-gold">
-                          {w.year}
+                        <div className="flex items-center justify-between gap-3 sm:contents">
+                          <div className="font-display text-2xl text-gold">
+                            {w.year}
+                          </div>
+                          <div className="order-3 self-start border border-terra-soft px-2.5 py-1 text-[10px] uppercase tracking-[0.1em] text-terra sm:order-none sm:self-auto">
+                            {w.type}
+                          </div>
                         </div>
-                        <div>
+                        <div className="min-w-0 sm:order-2">
                           <div className="font-display text-base font-medium text-indigo">
                             {w.title}
                           </div>
                           <div className="text-[12.5px] italic text-muted">
                             {w.meta}
                           </div>
-                        </div>
-                        <div className="border border-terra-soft px-2.5 py-1 text-[10px] uppercase tracking-[0.1em] text-terra">
-                          {w.type}
                         </div>
                       </div>
                     ))}

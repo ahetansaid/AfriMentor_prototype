@@ -43,8 +43,8 @@ export default async function MentoratPage({
         >
           ← Retour au profil
         </Link>
-        <div className="mx-auto mt-6 max-w-[720px] border border-line bg-white p-7 shadow-[0_30px_80px_rgba(26,47,78,0.08)] sm:p-12">
-          <header className="mb-7 flex items-center gap-5 border-b border-line pb-7">
+        <div className="mx-auto mt-6 max-w-[720px] border border-line bg-white p-5 shadow-[0_30px_80px_rgba(26,47,78,0.08)] sm:p-8 lg:p-12">
+          <header className="mb-7 flex flex-col items-start gap-4 border-b border-line pb-7 sm:flex-row sm:items-center sm:gap-5">
             <div className="h-20 w-20 shrink-0 overflow-hidden rounded-full bg-ivory-shadow">
               <Portrait
                 seed={pioneer.id}

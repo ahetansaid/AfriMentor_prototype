@@ -46,7 +46,7 @@ export default async function ArticlePage({
   return (
     <article className="pb-24">
       {/* ---------- HERO COVER IMMERSIF ---------- */}
-      <header className="relative min-h-[480px] overflow-hidden bg-indigo-deep text-ivory lg:min-h-[560px]">
+      <header className="relative min-h-[380px] overflow-hidden bg-indigo-deep text-ivory sm:min-h-[480px] lg:min-h-[560px]">
         {hasAuthorPhoto && author ? (
           <div className="absolute inset-0">
             <Portrait
@@ -79,7 +79,7 @@ export default async function ArticlePage({
           </Link>
         </div>
 
-        <div className="relative z-10 mx-auto flex min-h-[400px] max-w-[1240px] flex-col justify-end px-5 pb-14 pt-16 sm:px-8 sm:pb-16 lg:min-h-[480px]">
+        <div className="relative z-10 mx-auto flex min-h-[300px] max-w-[1240px] flex-col justify-end px-5 pb-10 pt-12 sm:min-h-[400px] sm:px-8 sm:pb-16 sm:pt-16 lg:min-h-[480px]">
           <Reveal>
             <div className="max-w-3xl">
               <div className="mb-5 flex items-center gap-3 text-[11px] font-semibold uppercase tracking-[0.2em] text-gold">
@@ -123,7 +123,7 @@ export default async function ArticlePage({
       </header>
 
       {/* ---------- CORPS ---------- */}
-      <div className="mx-auto max-w-[820px] px-5 pt-16 sm:px-8">
+      <div className="mx-auto max-w-[820px] px-5 pt-10 sm:px-8 sm:pt-16">
         <Reveal>
           <div className="article-prose">
             {article.body.map((p, i) => (
@@ -140,8 +140,8 @@ export default async function ArticlePage({
         {/* Pied — auteur + CTAs */}
         {author && (
           <Reveal>
-            <div className="mt-16 border-t border-line pt-8">
-              <div className="flex flex-wrap items-center justify-between gap-6">
+            <div className="mt-12 border-t border-line pt-8 sm:mt-16">
+              <div className="flex flex-col gap-5 sm:flex-row sm:flex-wrap sm:items-center sm:justify-between sm:gap-6">
                 <Link
                   href={`/pionniers/${author.id}`}
                   className="group flex items-center gap-4"

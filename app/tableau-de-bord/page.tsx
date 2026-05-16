@@ -86,7 +86,7 @@ export default async function DashboardPage() {
 
       <QuestTracker quests={user.quests} />
 
-      <div className="grid gap-10 lg:grid-cols-[1fr_320px]">
+      <div className="grid gap-6 lg:grid-cols-[1fr_320px] lg:gap-10">
         <div>
           {/* Statistiques */}
           <div className="mb-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">

@@ -45,7 +45,7 @@ export function HeroCarousel({ pioneers }: { pioneers: Pioneer[] }) {
 
   return (
     <section
-      className="relative h-[78vh] min-h-[560px] w-full overflow-hidden bg-indigo-deep text-ivory"
+      className="relative h-[70vh] min-h-[460px] w-full overflow-hidden bg-indigo-deep text-ivory sm:h-[78vh] sm:min-h-[560px]"
       onMouseEnter={() => setPaused(true)}
       onMouseLeave={() => setPaused(false)}
       aria-label="Pionniers vedettes"

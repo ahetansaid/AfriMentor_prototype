@@ -73,7 +73,7 @@ export default async function OpportunitiesPage({
 
       {/* ---------- LISTE ---------- */}
       <Container className="py-14 pb-24 sm:py-16">
-        <div className="grid gap-10 lg:grid-cols-[260px_1fr]">
+        <div className="grid gap-6 lg:grid-cols-[260px_1fr] lg:gap-10">
           <OpportunityFilters facets={facets} selected={selected} />
 
           <div>

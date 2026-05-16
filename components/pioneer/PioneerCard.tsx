@@ -20,7 +20,7 @@ export function PioneerCard({
 
       <Link href={`/pionniers/${pioneer.id}`} className="block">
         {/* Image avec zoom au hover */}
-        <div className="relative h-72 overflow-hidden bg-ivory-shadow sm:h-80">
+        <div className="relative h-56 overflow-hidden bg-ivory-shadow sm:h-72 lg:h-80">
           <div className="absolute inset-0 transition-transform duration-[1200ms] ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-110">
             <Portrait
               seed={pioneer.id}
