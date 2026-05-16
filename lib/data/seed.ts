@@ -22,7 +22,8 @@ export const PIONEERS: Pioneer[] = [
     availability: "Mentorat ouvert",
     views: 2847,
     completion: 100,
-    photoUrl: null,
+    photoUrl:
+      "https://images.unsplash.com/photo-1552915170-9a8007c66041?q=80&w=800&auto=format&fit=crop",
     tags: ["Santé", "Recherche-action", "Ouémé"],
     timeline: [
       { period: "1986 — 1992", role: "Médecin généraliste, Dispensaire de Kétou", org: "Ministère de la Santé · Préfecture de l'Ouémé" },
@@ -151,7 +152,8 @@ export const PIONEERS: Pioneer[] = [
     availability: "Mentorat ouvert",
     views: 1502,
     completion: 100,
-    photoUrl: null,
+    photoUrl:
+      "https://images.unsplash.com/photo-1616905796284-be6fe7d90b1e?q=80&w=800&auto=format&fit=crop",
     tags: ["Agriculture", "Sélection variétale", "Borgou"],
     timeline: [
       { period: "1989 — 2001", role: "Chercheuse, Station agronomique de Parakou", org: "Institut National des Recherches Agricoles" },
@@ -359,7 +361,8 @@ export const PIONEERS: Pioneer[] = [
     availability: "Mentorat ouvert",
     views: 870,
     completion: 40,
-    photoUrl: null,
+    photoUrl:
+      "https://images.unsplash.com/photo-1675117413556-d0efe14331a7?q=80&w=800&auto=format&fit=crop",
     tags: ["Administration", "Service public", "Collines"],
     timeline: [
       { period: "1986 — 2004", role: "Sous-préfet puis secrétaire général de préfecture", org: "Ministère de l'Intérieur" },
