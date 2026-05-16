@@ -231,8 +231,7 @@ export const PIONEERS: Pioneer[] = [
     availability: "Mentorat ouvert",
     views: 1361,
     completion: 100,
-    photoUrl:
-      "https://plus.unsplash.com/premium_photo-1733266816504-6e3a667ae36c?q=80&w=800&auto=format&fit=crop",
+    photoUrl: null,
     tags: ["Éducation", "Enseignement technique", "Mono"],
     timeline: [
       { period: "1985 — 1996", role: "Professeur puis proviseur, Lycée technique de Lokossa", org: "Ministère de l'Enseignement secondaire" },
