@@ -22,8 +22,7 @@ export const PIONEERS: Pioneer[] = [
     availability: "Mentorat ouvert",
     views: 2847,
     completion: 100,
-    photoUrl:
-      "https://plus.unsplash.com/premium_photo-1691411181835-f4f08c97e0a2?w=800&auto=format&fit=crop&q=70",
+    photoUrl: null,
     tags: ["Santé", "Recherche-action", "Ouémé"],
     timeline: [
       { period: "1986 — 1992", role: "Médecin généraliste, Dispensaire de Kétou", org: "Ministère de la Santé · Préfecture de l'Ouémé" },
