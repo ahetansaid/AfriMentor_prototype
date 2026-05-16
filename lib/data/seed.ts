@@ -152,8 +152,7 @@ export const PIONEERS: Pioneer[] = [
     availability: "Mentorat ouvert",
     views: 1502,
     completion: 100,
-    photoUrl:
-      "https://images.unsplash.com/photo-1532437698276-c2ac365e7147?q=80&w=800&auto=format&fit=crop",
+    photoUrl: null,
     tags: ["Agriculture", "Sélection variétale", "Borgou"],
     timeline: [
       { period: "1989 — 2001", role: "Chercheuse, Station agronomique de Parakou", org: "Institut National des Recherches Agricoles" },
